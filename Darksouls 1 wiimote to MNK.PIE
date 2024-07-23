@@ -1,0 +1,34 @@
+﻿//Darksouls Wiimote to Keyboard GlovePIE script made by WOODSBOIS
+
+// Analog Stick
+
+if (Wiimote.Nunchuk.JoyX > var.joyfix or Wiimote.Nunchuk.JoyX < -var.joyfix) then mouse.x = mouse.x + Wiimote.Nunchuk.JoyX/500 // {Analog is used
+if (Wiimote.Nunchuk.JoyY > var.joyfix or Wiimote.Nunchuk.JoyY < -var.joyfix) then mouse.y = mouse.y + Wiimote.Nunchuk.JoyY/500 // for mouse movement
+
+// C Buttons
+
+Keyboard.W = Wiimote.Up
+Keyboard.A = Wiimote.Left
+Keyboard.W = Wiimote.Right
+Keyboard.W = Wiimote.Down  //walk
+
+// Action Buttons
+
+Keyboard.Shift = Nunchuk1.C  //block/use left weapon
+Key.Tab = Nunchuk1.Z
+Key.Q = Wiimote.A     //Activate
+Key.Space = Wiimote.B  //Jump/sprint
+Key.E = Wiimote.One  //consume
+Keyboard.T = Wiimote.A && Wiimote.B //pickup
+Mouse.LeftButton = Wiimote.SwingLeft  //light attack
+Mouse.RightButton = Wiimote.SwingLeft && Wiimote.A   //heavy attack
+Key.Alt = Wiimote.A && Wiimote.B  //Toggle two hand
+Key.R = Wiimote.One  //Cycle magic
+Key.F = Wiimote.Two  //cycle consumables
+Key.C = Wiimote.Minus //cycle left hand weapons
+Key.V = Wiimote.Plus   //cycle right hand weapons
+Key.End = Wiimote.Minus && Wiimote.Plus  //Access menu, does not pause game
+
+//if youre reading this SUBSCRIBE :D
+
+
