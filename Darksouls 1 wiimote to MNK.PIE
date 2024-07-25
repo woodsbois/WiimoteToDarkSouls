@@ -14,14 +14,24 @@ Keyboard.W = Wiimote.Down  //walk
 
 // Action Buttons
 
-Keyboard.Shift = Nunchuk1.C  //block/use left weapon
-Key.Tab = Nunchuk1.Z
+//Keyboard.Shift = Nunchuk1.C  //block/use left weapon
+//Key.Tab = Nunchuk1.Z
+key.Shift = wiimote.Nunchuk.Z
+key.Tab = wiimote.Nunchuk.C
 Key.Q = Wiimote.A     //Activate
 Key.Space = Wiimote.B  //Jump/sprint
 Key.E = Wiimote.One  //consume
 Keyboard.T = Wiimote.A && Wiimote.B //pickup
-Mouse.LeftButton = Wiimote.SwingLeft  //light attack
-Mouse.RightButton = Wiimote.SwingLeft && Wiimote.A   //heavy attack
+Mouse.LeftButton = Wiimote.SwingLeft
+Mouse.LeftButton = Wiimote.SwingRight
+Mouse.LeftButton = Wiimote.SwingUp
+Mouse.LeftButton = Wiimote.SwingDown
+Mouse.LeftButton = Wiimote.Shake
+  //light attack
+Key.Delete = Wiimote.SwingLeft && Wiimote.B
+Key.Delete = Wiimote.SwingRight && Wiimote.B
+Key.Delete = Wiimote.SwingUp && Wiimote.B
+Key.Delete = Wiimote.SwingDown && Wiimote.B   //heavy attack
 Key.Alt = Wiimote.A && Wiimote.B  //Toggle two hand
 Key.R = Wiimote.One  //Cycle magic
 Key.F = Wiimote.Two  //cycle consumables
