@@ -9,15 +9,18 @@ if (Wiimote.Nunchuk.JoyY > var.joyfix or Wiimote.Nunchuk.JoyY < -var.joyfix) the
 
 Keyboard.W = Wiimote.Up
 Keyboard.A = Wiimote.Left
-Keyboard.W = Wiimote.Right
-Keyboard.W = Wiimote.Down  //walk
+Keyboard.S = Wiimote.Right
+Keyboard.D = Wiimote.Down  //walk
 
 // Action Buttons
 
-//Keyboard.Shift = Nunchuk1.C  //block/use left weapon
+Key.Q = Nunchuk1.C  //block/use left weapon
 //Key.Tab = Nunchuk1.Z
 key.Shift = wiimote.Nunchuk.Z
-key.Tab = wiimote.Nunchuk.C
+key.Tab = wiimote.Nunchuk.SwingDown
+key.Tab = wiimote.Nunchuk.SwingUp
+key.Tab = wiimote.Nunchuk.SwingLeft
+key.Tab = wiimote.Nunchuk.SwingRight
 Key.Q = Wiimote.A     //Activate
 Key.Space = Wiimote.B  //Jump/sprint
 Key.E = Wiimote.One  //consume
@@ -28,10 +31,7 @@ Mouse.LeftButton = Wiimote.SwingUp
 Mouse.LeftButton = Wiimote.SwingDown
 Mouse.LeftButton = Wiimote.Shake
   //light attack
-Key.Delete = Wiimote.SwingLeft && Wiimote.B
-Key.Delete = Wiimote.SwingRight && Wiimote.B
-Key.Delete = Wiimote.SwingUp && Wiimote.B
-Key.Delete = Wiimote.SwingDown && Wiimote.B   //heavy attack
+Key.Delete = Wiimote.Home //heavy attack
 Key.Alt = Wiimote.A && Wiimote.B  //Toggle two hand
 Key.R = Wiimote.One  //Cycle magic
 Key.F = Wiimote.Two  //cycle consumables
